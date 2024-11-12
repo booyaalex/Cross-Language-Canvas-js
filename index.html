@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CLC JS</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="javascript/canvas.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  </head>
+  <body>
+    <main>
+      <canvas id="my-canvas" onclick="canvasClick()"></canvas>
+      <div id="controls">
+        <div>
+          <div id="grid-2x2">
+            <button id="shape-select-line" type="button" onclick="shapeSelect('line', 'Line')">
+              <img src="images/line.png" alt="Line Image">
+            </button>
+            <button id="shape-select-rect" type="button" onclick="shapeSelect('rect', 'Rectangle')">
+              <img src="images/rect.png" alt="Rect Image">
+            </button>
+            <button id="shape-select-trigon" type="button" onclick="shapeSelect('trigon', 'Triangle')">
+              <img src="images/triangle.png" alt="Triangle Image">
+            </button>
+            <button id="shape-select-circ" type="button" onclick="shapeSelect('circ', 'Circle')">
+              <img src="images/circle.png" alt="Circle Image">
+            </button>
+          </div>
+          <div id="grid-3x3">
+            <button id="color-select-red" class="color-select" type="button" onclick="colorSelect('red', 'Red')">
+              <div></div>
+            </button>
+            <button id="color-select-orange" class="color-select" type="button" onclick="colorSelect('orangered', 'Orange')">
+              <div></div>
+            </button>
+            <button id="color-select-yellow" class="color-select" type="button" onclick="colorSelect('yellow', 'Yellow')">
+              <div></div>
+            </button>
+            <button id="color-select-green" class="color-select" type="button" onclick="colorSelect('green', 'Green')">
+              <div></div>
+            </button>
+            <button id="color-select-skyblue" class="color-select" type="button" onclick="colorSelect('deepskyblue', 'Cyan')">
+              <div></div>
+            </button>
+            <button id="color-select-blue" class="color-select" type="button" onclick="colorSelect('blue', 'Blue')">
+              <div></div>
+            </button>
+            <button id="color-select-purple" class="color-select" type="button" onclick="colorSelect('indigo', 'Purple')">
+              <div></div>
+            </button>
+            <button id="color-select-black" class="color-select" type="button" onclick="colorSelect('black', 'Black')">
+              <div></div>
+            </button>
+          </div>
+        </div>
+        <p id="selected-shape">Selected Shape: Line</p>
+        <p id="selected-color">Selected Color: Black</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  background-color: #f0f0f0;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#my-canvas {
+  background-color: white;
+  width: 80%;
+  height: calc(100% - 20px);
+  margin: 10px 7px;
+}
+#my-canvas:hover {
+  cursor: crosshair;
+}
+#controls {
+  width: 20%;
+  margin: 10px 7px;
+  height: calc(100% - 20px);
+}
+#controls > div {
+  height: 20%;
+  display: flex;
+}
+#controls > div > div {
+  aspect-ratio : 1 / 1;
+}
+#grid-2x2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+#grid-2x2 button {
+  width: 85%;
+  aspect-ratio : 1 / 1;
+  padding: 1.5px;
+  border: solid 1.5px #c0c0c0;
+  background-color: #e0e0e0;
+}
+button > img {
+  width: 100%;
+}
+#grid-3x3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.color-select {
+  position: relative;
+  width: 70%;
+  aspect-ratio : 1 / 1;
+  background-color: #e0e0e0;
+  border: solid 1.5px #c0c0c0;
+}
+.color-select > div {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  content: "";
+} 
+
+
+#color-select-red > div {
+  background-color: red;
+}
+#color-select-orange > div {
+  background-color: orangered;
+}
+#color-select-yellow > div {
+  background-color: yellow;
+}
+#color-select-green > div {
+  background-color: green;
+}
+#color-select-skyblue > div {
+  background-color: deepskyblue;
+}
+#color-select-blue > div {
+  background-color: blue;
+}
+#color-select-purple > div {
+  background-color: indigo;
+}
+#color-select-black > div {
+  background-color: black;
+}
